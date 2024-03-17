@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jasenko | Portfolio</title>
+        <link rel="stylesheet" href="styles/style.css">
+        <meta charset="utf-8">
+        <link rel="icon" type="image/x-icon" href="slike/header-img.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+<body>
+  <!--KOD ZA NAV BAR PREUZET SA: https://getbootstrap.com/docs/5.0/components/navbar/ i dorađen-->
+    <nav>
+        <div class="navbar navbar-expand-lg bg-light container-fluid px-3" id="nav">
+          <a class="navbar-brand" href="#"><img src="slike/header-img.png" alt="" width="65px" height="60px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#home"><i class="fa fa-home" style="font-size:20px"></i>Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#about"><i class="fa fa-user-circle" style="font-size:20px"></i>About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#education"><i class="fa fa-solid fa-graduation-cap" style="font-size: 20px;"></i>Education</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="gallery1.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-image" style="font-size:20px"></i>
+                  Gallery
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="gallery1.html" target="_blank">Gallery 1</a></li>
+                  <li><a class="dropdown-item" href="gallery2.html" target="_blank">Gallery 2</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-tasks" aria-hidden="true"></i>
+                  Projects
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="m-project.html" target="_blank">School projects</a></li>
+                  <li><a class="dropdown-item" href="project1.html" target="_blank">Project 1</a></li>
+                  <li><a class="dropdown-item" href="project2.html" target="_blank">Project 2</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="blog.html" target="_blank"><i class="fa fa-edit" style="font-size:20px"></i>Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="#contact"><i class="fa fa-phone" style="font-size: 20px;"></i>Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--HOME PAGE počinje ovdje xd-->
+<main>
+  <div id="home" class="homepage">
+    <div class="leftside">
+      <h1 class="display-1">Jasenko <span>Zlatarevic</span></h1>
+      <p class="fw-bold" style="color: var(--blue-color);">DESIGN <span class="text-secondary" >•</span> DEVELOPMENT <span class="text-secondary">•</span> BRANDING</p>
+    </div>
+    <div class="rightside">
+      <img src="slike/Screenshot_4.png" alt="" width="350px" height="350px">
+    </div> 
+  </div>
+  <div class="razmak1" style="margin-bottom: 120px;"></div>
+  <!--ABOUT ME PAGE počinje ovdje-->
+  <div id="about" class="bg-light py-5">
+    <div class="container">
+      <div class="row pt-4">
+        <div class="text-center">
+          <h1 class="text-secondary">Hello!</h1>
+          <p style="color: var(--blue-color); font-weight: bold;">I'am future web developer</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <figure>
+            <img id="aboutme-img" class="rounded border p-2 " src="slike/Screenshot_2.png" alt="" width="270px" height="300px">            
+          </figure>
+
+        </div>
+        <div class="col">
+          <h5 class="text-secondary">About me</h5>
+          <section>
+          <p class="text-secondary">
+            I am Jasenko Zlatarević, born in Cazin in 2001,<br>
+            graduated from high school in construction,<br>
+            majored in architectural technician, after finishing<br>
+            high school I continue my education in Sarajevo.<br>
+            I also play football and actively go to the gym, I am<br>
+            ready for all kinds of challenges, I study foreign<br>
+            languages and I like to read contemporary<br>
+            Bosnian-Herzegovinian literature<br>
+            I finished primary music school, so in my<br>
+            free time I usually play the accordion or sleep</p>            
+          </section>
+
+          </div>
+          <div class="col">
+            <h5 class="text-secondary">Details:</h5>
+            <p class="text-dark fw-bolder">Name:</p>
+            <p class="text-secondary">Jasenko Zlatarevic</p>
+            <p class="text-dark fw-bolder">Age:</p>
+            <p class="text-secondary">21 years</p>
+            <p class="text-dark fw-bolder">Location:</p>
+            <p class="text-secondary">Cazin / Sarajevo</p>
+            <p class="text-dark fw-bolder">E-mail:</p>
+            <p class="text-secondary">jasenkozlatarevic5@gmail.com</p>
+          </div>
+        </div>
+      </div>
+      </div>
+
+      <!--EDUCATION DIO počinje ovdje-->
+      <div id="education" class="text-center py-5 container-fluid">
+          <div class="row pt-3">
+            <div class="col-md-12"><h1 class="text-secondary">Education</h1></div>
+            <div class="col-md-12"><p style="color: var(--blue-color); font-weight: bold;">My way through life</p></div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 px-5">
+              <h5 class="text-start" style="color: var(--blue-color); font-weight: bold;">SKILLS</h5>
+              <h6 class="text-start  text-secondary">TEHNICAL SKILLS:</h6>
+              <p class="text-start  text-secondary">Developing generic competencies<br>
+                Computer programming languages<br>
+                Web development<br>
+              <h6 class="text-start  text-secondary">SOFT-SKILLS:</h6>
+              <p class="text-start  text-secondary">
+                Communication<br>
+                Team Work<br>
+                Flexibility<br>
+                Teamwork<br>
+                Problem-solving</p>
+              </p>
+              <h6 class="text-start text-secondary ">PROGRAMMING LANGUAGE SKILLS:</h6>
+              <p class="text-start  text-secondary">
+                HTML&CSS ✔️<br>
+                JAVA SCRIPT ✔️<br>
+                PYTHON ✔️<br>
+                DJANGO ✔️
+              </p>
+            </div>
+            <div class="col-md-6"><h5 class="pb-4" style="color: var(--blue-color); font-weight: bold;">ACHIEVEMENTS</h5>
+              <table class="table table-bordered text-secondary">
+                <thead>
+                  <tr>
+                    <th scope="col">Education</th>
+                    <th scope="col">School name</th>
+                    <th scope="col">City</th>
+                    <th scope="col">School address</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td scope="row">From 2006/2016,<br> I attend primary school</td>
+                    <td>Cazin 1</td>
+                    <td>Cazin</td>
+                    <td>Trg zlatnih ljiljana<br>77220</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">I am entering high <br>school in <br>2016/2017-2019-2020</td>
+                    <td>DRUGA SREDNJA<br>ŠKOLA CAZIN</td>
+                    <td>Cazin</td>
+                    <td>Generala Izeta <br>Nanića, Cazin</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">2020/2021. <br>I am entering the<br> IT academy</td>
+                    <td>IT academy</td>
+                    <td>Sarajevo</td>
+                    <td>16 Zmaja od Bosne,<br>Kubus D</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">In 2021/2022, I am<br> enrolling in the study<br> of information technologies</td>
+                    <td>Faculty of Science<br> and Mathematics</td>
+                    <td>Sarajevo</td>
+                    <td>Zmaja od Bosne<br> 33-35, Sarajevo</td>
+                  </tr>
+                  <tr>
+                    <td scope="row">In 2023/2024,<br> I enrolled at the IBU</td>
+                    <td>Internationl<br> Burch University</td>
+                    <td>Sarajevo</td>
+                    <td>Francuske revolucije bb,<br> Ilidža 71210</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="text-secondary">I play football and fitness. I like teamwork, I react well in stressful situations. I am ready to constantly learn something new and adapt to the demands of the modern market.
+                I have wide interests, I study foreign languages, I read contemporary Bosnian-Herzegovinian literature, my social skills are highly developed.
+              </p>
+            </div>
+          </div>
+       </div>
+      <!--Ovdje počinje KONTAKT FORMA-->
+      <div id="contact" class="bg-light p-5">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <h1 class="text-secondary">Contact me</h1>
+            <p style="color: var(--blue-color); font-weight: bold;">You can do it here</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            <img src="slike/keep me posted.png" alt="" width="500px" height="500px">
+          </div>
+          <div class="col-sm-6">
+            <div class="container py-2">
+              <form>
+                <div class="mb-3">
+                  <input class="form-control" id="name" type="text" placeholder="First name" data-sb-validations="required"/>
+                  <div class="invalid-feedback" data-sb-feedback="name:required">First name is required.</div>
+                </div>
+                <div class="mb-3">
+                  <input class="form-control" id="lastname" type="text" placeholder="Last name" data-sb-validations="required"/>
+                  <div class="invalid-feedback" data-sb-feedback="Last name:required">Last name is required.</div>
+                </div>
+                <div class="mb-3">
+                  <input class="form-control" id="emailAddress" type="email" placeholder="Email Address" data-sb-validations="required, email" />
+                  <div class="invalid-feedback" data-sb-feedback="emailAddress:required">Email Address is required.</div>
+                  <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email Address Email is not valid.</div>
+                </div>
+                <div class="mb-3">
+                  <input class="form-control" id="title" type="text" placeholder="Message title" data-sb-validations="required"/>
+                  <div class="invalid-feedback" data-sb-feedback="Message title:required">Message title is required.</div>
+                </div>
+                <div class="mb-3">
+                  <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 7rem;" data-sb-validations="required"></textarea>
+                  <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
+                </div>
+                <div class="d-none" id="submitSuccessMessage">
+                  <div class="text-center mb-3">Form submission successful!</div>
+                </div>
+                <div class="d-none" id="submitErrorMessage">
+                  <div class="text-center text-danger mb-3">Error sending message!</div>
+                </div>
+                <div class="d-grid">
+                  <button class="btn btn-lg text-white" style="background: var(--blue-color); width: 100px;" type="submit">Submit</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>        
+</main>
+
+      <!--FOOTER kod preuzet sa https://getbootstrap.com/docs/5.2/examples/footers/ i dorađen-->
+      <div id="razmak">
+      </div>
+      <div class="container">
+        <footer class="py-3 bg-light container-fluid">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <a href="https://www.facebook.com/Jasenko10/" target="_blank" class="fa fa-facebook nav-link px-2 text-muted"></a>
+            <a href="https://www.instagram.com/jaasenko/" target="_blank" class="fa fa-instagram nav-link px-2 text-muted"></a>
+            <a href="https://twitter.com/jaasenko" target="_blank" class="fa fa-twitter nav-link px-2 text-muted"></a>
+            <a href="https://github.com/" target="_blank" class="fa fa-github nav-link px-2 text-muted"></a>
+            <a href="https://www.linkedin.com/in/jasenko-zlatarevic-34105a245/" target="_blank" class="fa fa-linkedin nav-link px-2 text-muted"></a>
+            <a id="gore" href="#nav" style="font-weight: bolder;" class="px-2 text-muted"><span>Back to top</span>&nbsp;⬆</a>
+          </ul>
+          <p class="text-center text-muted">© 2024 Copyright</p>
+        </footer>
+      </div>
+</body>
+</html>
