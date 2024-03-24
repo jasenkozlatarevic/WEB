@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jasenko | Gallery</title>
+        <link rel="stylesheet" href="../Portfolio/styles/gallery1.css">
+        <meta charset="utf-8">
+        <link rel="icon" type="image/x-icon" href="slike/taking a photo.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+<body>
+  <!--KOD ZA NAV BAR PREUZET SA: https://getbootstrap.com/docs/5.0/components/navbar/ i dorađen-->
+    <nav class="navbar navbar-expand-lg bg-light" id="nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="slike/header-img.png" alt="" width="65px" height="60px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item ">
+                <a class="nav-link" aria-current="page" href="index.html"><i class="fa fa-home" style="font-size:20px"></i>Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html" target="_blank"><i class="fa fa-user-circle" style="font-size:20px"></i>About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html" target="_blank"><i class="fa fa-solid fa-graduation-cap" style="font-size: 20px;"></i>Education</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="gallery.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-image" style="font-size:20px"></i>
+                  Gallery
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="gallery1.html" target="_blank">Gallery 1</a></li>
+                  <li><a class="dropdown-item" href="gallery2.html">Gallery 2</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-tasks" aria-hidden="true"></i>
+                  Projects
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="m-project.html" target="_blank">School projects</a></li>
+                  <li><a class="dropdown-item" href="project1.html" target="_blank">Project 1</a></li>
+                  <li><a class="dropdown-item" href="project2.html" target="_blank">Project 2</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="blog.html" target="_blank"><i class="fa fa-edit" style="font-size:20px"></i>Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-current="page" href="index.html" target="_blank"><i class="fa fa-phone" style="font-size: 20px;"></i>Contact</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-secondary" type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div id="glavno" class="m-5 bg-light py-5">
+        <h1 class="text-center text-secondary pt-3">Second gallery</h1>
+        <p class="text-center pb-3" style="color: #89cff0;">Some of the natural wealth in Bosnia and Herzegovina</p>
+       <!--Izvor videa: https://www.youtube.com/watch?v=QYwp5sr8L1g-->
+       <div class="video_section">
+        <div class="main_video">
+            <div class="una_1">
+            <video width="450" height="450" autoplay muted controls>
+                <source src="slike/Jedna, jedina, jedinstvena!.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video>
+            </div><br>
+        </div>
+        <div class="second_video">
+            <div class="zajednicki">
+                <div class="buk_2">
+                <video width="320" height="240" autoplay muted controls loop>
+                    <source src="slike/Štrbački Buk.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
+                </div>
+                <div class="buk_2_text">
+                    <p class="text-secondary" style="width: 350px;">
+                        <a href="http://nationalpark-una.ba/bs/lokacija.php?id=6" target="_blank" style="color: #89cff0; text-decoration: none;">Strbački buk </a>is a 24-meter-high waterfall on the
+                    river Una at an altitude of 294 meters. It is
+                    located on the border between Croatia and Bosnia
+                    and Herzegovina. It is part of the Una National
+                    Park. Along with the Martinbrod waterfalls, it is
+                    one of the most beautiful on the Una river.</p>
+                </div>
+        </div>
+        <div class="zajednicki">
+            <div class="sutjeska_3">
+                <video width="320" height="240" autoplay muted controls loop>
+                    <source src="slike/Sutjeska National Park.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video>
+                </div>
+                <div class="sutjeska_3_text">
+                    <p class="text-secondary" style="width: 350px;">
+                        <a href="https://bs.wikipedia.org/wiki/Nacionalni_park_Sutjeska" target="_blank" style="color: #89cff0; text-decoration: none;">Sutjeska National Park</a> is the oldest national
+                    park in Bosnia and Herzegovina. Here is also
+                    the last rainforest in Europe - Perućica. Sutjeska
+                    is also home to the highest mountain peak in Bosnia
+                    and Herzegovina, Maglić at 2,386 m.                        
+                    </p>
+
+                </div>
+            </div>
+            <div class="zajednicki">
+                <div class="kravica_4">
+                    <video width="320" height="240" autoplay muted controls loop>
+                        <source src="slike/4K Kravica Waterfall.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                      </video>
+                    </div>
+                    <div class="kravica_4_text">
+                        <p class="text-secondary" style="width: 350px;">
+                            <a href="https://kravica.ba/" target="_blank" style="color: #89cff0; text-decoration: none;">Kravica</a> is a waterfall in Bosnia and Herzegovina,
+                            located 10 km from Međugorje, in Studenci near Ljubuški
+                            It is located on the Trebižat River and has a width
+                            of 120 meters and a height of about 28 meters. In
+                            the past, many mills and stupas for rolling the past
+                            many mills and stupas for rolling cloth were active by
+                            the waterfall.                            
+                        </p>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div class="middle">
+        <div class="containe1">
+            <div class="prvi_blok">
+                <!--Izvor slike https://www.google.com/search?q=stari+mos&hl=bs&sxsrf=ALiCzsak68ju90uIcpyL-K6J8KqWk_ciWQ:1668908493618&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjDyrLP0Lv7AhVv_rsIHYlkCOoQ_AUoAXoECAIQAw&biw=1536&bih=696&dpr=1.25-->
+                <p class="text-secondary"><a href="https://en.wikipedia.org/wiki/Stari_Most" target="_blank" style="color: #89cff0; text-decoration: none;">The Old Bridge in Mostar</a> over the Neretva River is a UNESCO World Heritage Site which, when it was built, was the largest arch structure in the world. </p>
+                <p></p>
+                <img src="slike/starimost.jpg" alt="" class="py-3">
+            </div>
+            <!--Izvor slike: https://furaj.ba/wp-content/uploads/2018/05/12_Prokosko_Lake.jpg-->
+            <div class="drugi_blok">
+                <p class="text-secondary"><a href="https://hr.wikipedia.org/wiki/Proko%C5%A1ko_jezero" target="_blank" style="color: #89cff0; text-decoration: none;">Lake Prokoško</a> is located on the mountain Vranica, Bosnia and Herzegovina and is of glacial origin.</p>
+                <p></p>
+                <img src="slike/prokosko-jezero.jpg" alt="">
+            </div>
+        </div>
+        <div class="containe2">
+            <div class="treci_blok">
+                <!--Izvor slike: https://www.google.com/search?q=tekija+blagaj&sxsrf=ALiCzsa6yJgY1EHFC4jCTAZcGPP9OW--Nw:1668912230085&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjEqorF3rv7AhUIgP0HHWRWBooQ_AUoAXoECAIQAw&biw=1536&bih=754&dpr=1.25-->
+               <p class="text-secondary"><a href="https://bs.wikipedia.org/wiki/Tekija_u_Blagaju" target="_blank" style="color: #89cff0; text-decoration: none;" >Tekija in Blagaj </a>is located at the source of the Buna river, not far from the center of Blagaj near Mostar.</p>
+                <img src="slike/vrelo bune.jpg" alt="" class="pt-3">
+            </div>
+            <div class="cetvrti_blok">
+                <!--Izvor slike: https://www.google.com/search?q=tvr%C4%91ava+ostro%C5%BEac&hl=bs&sxsrf=ALiCzsYrnH2d7b2eFk9MKJxac_M95ndpug:1668909125294&source=lnms&tbm=isch&sa=X&ved=2ahUKEwic-cz80rv7AhXc_7sIHWoxAkMQ_AUoAXoECAEQAw&biw=1536&bih=696&dpr=1.25#imgrc=_ANUaHCN-fAgFM-->
+                <p class="text-secondary"><a href="https://bs.wikipedia.org/wiki/Ostro%C5%BEac_(tvr%C4%91ava)" target="_blank" style="color: #89cff0; text-decoration: none;">Tvrđava Ostrožac</a>The fortress dates back to the 16th century, when the Ottomans founded the Ottoman province of Bosnia.</p>
+                <img src="slike/tvrđavaostrozac.jpg" alt="" class="pt-3">
+            </div>
+            <div class="peti_blok">
+                <!--Izvor slike: https://azra.ba/wp-content/uploads/2022/02/stecci-glavna.jpg-->
+                <p class="text-secondary"><a href="https://bs.wikipedia.org/wiki/Ste%C4%87ak" target="_blank" style="color: #89cff0; text-decoration: none;">Stećak</a> is a type of stone medieval tombstone.</p>
+                <img src="slike/stecci-glavna.jpg" alt="">
+            </div>
+        </div>
+    </div>        
+      </div>
+<!--FOOTER kod preuzet sa https://getbootstrap.com/docs/5.2/examples/footers/ i dorađen-->
+<div id="razmak">
+</div>
+<div class="container">
+  <footer class="py-3 bg-light container-fluid">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <a href="https://www.facebook.com/Jasenko10/" target="_blank" class="fa fa-facebook nav-link px-2 text-muted"></a>
+      <a href="https://www.instagram.com/jaasenko/" target="_blank" class="fa fa-instagram nav-link px-2 text-muted"></a>
+      <a href="https://twitter.com/jaasenko" target="_blank" class="fa fa-twitter nav-link px-2 text-muted"></a>
+      <a href="https://github.com/" target="_blank" class="fa fa-github nav-link px-2 text-muted"></a>
+      <a href="https://www.linkedin.com/in/jasenko-zlatarevic-34105a245/" target="_blank" class="fa fa-linkedin nav-link px-2 text-muted"></a>
+      <a id="gore" href="#nav" style="font-weight: bolder;" class="px-2 text-muted"><span>Back to top</span>&nbsp;⬆</a>
+    </ul>
+    <p class="text-center text-muted">© 2022 Copyright</p>
+  </footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--open-sans);
+}
+:root{
+    --baby-blue-color: #89cff0;
+    --white-color: #fff;
+    --gray-color:#7c8184;
+    --secondary-color:rgb(160, 160, 160);
+    --blue-color: rgb(79, 93, 149);
+}
+:root {
+    --open-sans: 'Open Sans', sans-serif; /* Open Sans font */
+  }
+.navbar a{
+    color: var(--gray-color);    
+    font-size: 1rem;
+}
+#navbar-nav{
+    margin-left: 50px;
+}
+.navbar a i{
+    padding-right: 0.9rem;
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+#gore{
+    text-decoration: none;
+    padding-top: 0.1875rem;
+}
+#razmak{
+    margin-bottom: 200px;
+  }
+/*Druga galerija */
+.una_1_text {
+    color: white;
+}
+.una_1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.video_section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.second_video {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: black;
+}
+.zajednicki {
+    display: flex;
+    flex-direction: row;
+}
+.buk_2_text {
+    padding-top: 20px;
+    background-color: white;
+    height: 170px;
+    margin-top: 30px;
+    
+}
+.sutjeska_3_text {
+    padding-top: 20px;
+    background-color: white;
+    height: 160px;
+    margin-top: 30px;
+}
+.container1 {
+    font-weight: bolder;
+}
+.container2 {
+    font-weight: bolder;
+}
+span {
+    color: black;
+}
+.kravica_4_text {
+    padding-top: 20px;
+    background-color: white;
+    height: 150px;
+    margin-top: 30px;
+}
+.una_1 {
+    padding-top: -20px;
+}
+.middle {
+    display: flex;
+    flex-direction: column;
+	overflow: hidden;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 960px;
+    height: 700px;
+}
+.middle p {
+    height: 50px;
+    color: white;
+}
+.prvi_blok {
+    display: flex;
+    flex-direction: column;
+}
+.drugi_blok {
+    display: flex;
+    flex-direction: column;
+}
+.treci_blok {
+    display: flex;
+    flex-direction: column;
+}
+.containe1 {
+    display: flex;
+    flex-direction: row;
+}
+.prvi_blok {
+    width: 60%;
+    height: 300px;
+    padding: 5px;
+    float: left;
+}
+.prvi_blok img {
+    height: 100%;
+    width: 100%;
+}
+.drugi_blok {
+    width: 40%;
+    height: 360px;
+    padding: 5px;
+    float: right;
+}
+.drugi_blok img {
+    height: 100%;
+    background-size: cover;
+    float: right;
+}      
+.containe2 {
+    display: flex;
+    flex-direction: row;
+}
+.treci_blok {
+	width: 33.33%;
+	height: 350px;
+	padding: 5px;
+	float: left;
+}
+.treci_blok img {
+	height: 100%;
+	background-size: cover;
+
+}
+.cetvrti_blok {
+  height: 350px;
+  padding: 5px;
+  float: left;
+  width: 33.33%;
+
+}
+.cetvrti_blok img {
+	height: 100%;
+	background-size: cover;
+	
+}
+.peti_blok {
+	width: 33.33%;
+	height: 350px;
+    margin: 20px;
+}
+.peti_blok img {
+	height: 100%;
+	background-size: cover;
+}
+
+/*-------------------------RESPONSIVE--------------------------------------*/
+@media screen and (max-width: 1200px) { 
+    .una_1 video{
+        width: 300px;
+        height: 300px;
+    }
+    .glavni_dio {
+        padding-top: 40px;
+    }
+    .videeo {
+        flex-direction: column;
+    }
+    .video_section {
+        flex-direction: column;
+    }
+    .zajednicki {
+        flex-direction: column;
+    }
+    .zajednicki p{
+       margin-top: -40px;
+    }
+    .zajednicki video {
+        width: 300px;
+    }
+    .containe1 {
+        display: flex;
+        flex-direction: column;
+    }
+    .prvi_blok {
+        width: 300px;
+    }
+    .drugi_blok {
+        width: 300px;
+    }
+    .containe2 {
+        display: flex;
+        flex-direction: column;
+    }
+    .treci_blok {
+        width: 300px;
+    }
+    .cetvrti_blok {
+        width: 300px;
+    }
+    .peti_blok {
+        width: 300px;
+    }
+    .middle {
+        width: 300px;
+        background-size: cover;
+        height: 1700px;
+    }
+    .middle p{
+        display: none;
+    }
+    .prvi_blok p {
+        height: 200px;
+        width: 200px;
+    }
+    .drugi_blok p {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+
+
