@@ -1,0 +1,37 @@
+.bg-image {
+    background-image: url('../lab4/assets/form-wizard-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    color: #fff; 
+  }
+  #form{
+    background-color: white;
+    height: auto;
+    margin-bottom: 60px;
+  }
+  form{
+    font-size: 2px;
+    margin-bottom: 15px;
+    padding: 50px;
+  }
+  .form-row input{
+    border: none;
+    border-bottom: 1px solid black;
+    border-radius: 0;
+  }
+  .form-group input{
+    border: none;
+    border-bottom: 1px solid black;
+    border-radius: 0;
+  }
+  #gender{
+    border: none;
+    border-bottom: 1px solid black;
+    border-radius: 0;
+  }
+  #language{
+    border: none;
+    border-bottom: 1px solid black;
+    border-radius: 0;
+  }
