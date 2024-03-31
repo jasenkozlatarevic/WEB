@@ -12,59 +12,56 @@
     </head>
 <body>
   <!--KOD ZA NAV BAR PREUZET SA: https://getbootstrap.com/docs/5.0/components/navbar/ i dorađen-->
-    <nav class="navbar navbar-expand-lg bg-light" id="nav">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"><img src="slike/header-img.png" alt="" width="65px" height="60px"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item ">
-                <a class="nav-link" aria-current="page" href="index.html"><i class="fa fa-home" style="font-size:20px"></i>Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html" target="_blank"><i class="fa fa-user-circle" style="font-size:20px"></i>About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="index.html" target="_blank"><i class="fa fa-solid fa-graduation-cap" style="font-size: 20px;"></i>Education</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="gallery.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-image" style="font-size:20px"></i>
-                  Gallery
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="gallery1.html" target="_blank">Gallery 1</a></li>
-                  <li><a class="dropdown-item" href="gallery2.html">Gallery 2</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-tasks" aria-hidden="true"></i>
-                  Projects
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="m-project.html" target="_blank">School projects</a></li>
-                  <li><a class="dropdown-item" href="project1.html" target="_blank">Project 1</a></li>
-                  <li><a class="dropdown-item" href="project2.html" target="_blank">Project 2</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="blog.html" target="_blank"><i class="fa fa-edit" style="font-size:20px"></i>Blog</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " aria-current="page" href="index.html" target="_blank"><i class="fa fa-phone" style="font-size: 20px;"></i>Contact</a>
-              </li>
+  <nav>
+    <div class="navbar navbar-expand-lg bg-light container-fluid px-3" id="nav">
+      <a class="navbar-brand" href="#"><img src="slike/header-img.png" alt="" width="65px" height="60px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="../Portfolio/index.html"><i class="fa fa-home" style="font-size:20px"></i>Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html"><i class="fa fa-user-circle" style="font-size:20px"></i>About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html"><i class="fa fa-solid fa-graduation-cap" style="font-size: 20px;"></i>Education</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="../Portfolio/gallery1.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-image" style="font-size:20px"></i>
+              Gallery
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../Portfolio/gallery1.html">Gallery 1</a></li>
+              <li><a class="dropdown-item" href="../Portfolio/gallery2.html" >Gallery 2</a></li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-secondary" type="submit"><i class="fa fa-search"></i></button>
-            </form>
-          </div>
-        </div>
-      </nav>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-tasks" aria-hidden="true"></i>
+              Projects
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="m-project.html" >School projects</a></li>
+              <li><a class="dropdown-item" href="project1.html">Project 1</a></li>
+              <li><a class="dropdown-item" href="project2.html">Project 2</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="blog.html"><i class="fa fa-edit" style="font-size:20px"></i>Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="index.html"><i class="fa fa-phone" style="font-size: 20px;"></i>Contact</a>
+          </li>
+        </ul>
+      </div>
+      <button class="custom-button">Download CV</button>
+    </div>
+  </nav>
       <div id="glavno" class="m-5 bg-light py-5">
         <h1 class="text-center text-secondary pt-3">Second gallery</h1>
-        <p class="text-center pb-3" style="color: #89cff0;">Some of the natural wealth in Bosnia and Herzegovina</p>
+        <p class="text-center pb-3" style="color: var(--blue-color); font-weight: bold;">Some of the natural wealth in Bosnia and Herzegovina</p>
        <!--Izvor videa: https://www.youtube.com/watch?v=QYwp5sr8L1g-->
        <div class="video_section">
         <div class="main_video">
@@ -85,7 +82,7 @@
                 </div>
                 <div class="buk_2_text">
                     <p class="text-secondary" style="width: 350px;">
-                        <a href="http://nationalpark-una.ba/bs/lokacija.php?id=6" target="_blank" style="color: #89cff0; text-decoration: none;">Strbački buk </a>is a 24-meter-high waterfall on the
+                        <a href="http://nationalpark-una.ba/bs/lokacija.php?id=6" target="_blank" style="color: var(--blue-color); font-weight: bold;text-decoration: none;" >Strbački buk </a>is a 24-meter-high waterfall on the
                     river Una at an altitude of 294 meters. It is
                     located on the border between Croatia and Bosnia
                     and Herzegovina. It is part of the Una National
@@ -102,7 +99,7 @@
                 </div>
                 <div class="sutjeska_3_text">
                     <p class="text-secondary" style="width: 350px;">
-                        <a href="https://bs.wikipedia.org/wiki/Nacionalni_park_Sutjeska" target="_blank" style="color: #89cff0; text-decoration: none;">Sutjeska National Park</a> is the oldest national
+                        <a href="https://bs.wikipedia.org/wiki/Nacionalni_park_Sutjeska" target="_blank" style="color: var(--blue-color); font-weight: bold;text-decoration: none;" >Sutjeska National Park</a> is the oldest national
                     park in Bosnia and Herzegovina. Here is also
                     the last rainforest in Europe - Perućica. Sutjeska
                     is also home to the highest mountain peak in Bosnia
@@ -120,7 +117,7 @@
                     </div>
                     <div class="kravica_4_text">
                         <p class="text-secondary" style="width: 350px;">
-                            <a href="https://kravica.ba/" target="_blank" style="color: #89cff0; text-decoration: none;">Kravica</a> is a waterfall in Bosnia and Herzegovina,
+                            <a href="https://kravica.ba/" target="_blank" style="color: var(--blue-color); font-weight: bold;text-decoration: none;" >Kravica</a> is a waterfall in Bosnia and Herzegovina,
                             located 10 km from Međugorje, in Studenci near Ljubuški
                             It is located on the Trebižat River and has a width
                             of 120 meters and a height of about 28 meters. In
@@ -136,13 +133,13 @@
         <div class="containe1">
             <div class="prvi_blok">
                 <!--Izvor slike https://www.google.com/search?q=stari+mos&hl=bs&sxsrf=ALiCzsak68ju90uIcpyL-K6J8KqWk_ciWQ:1668908493618&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjDyrLP0Lv7AhVv_rsIHYlkCOoQ_AUoAXoECAIQAw&biw=1536&bih=696&dpr=1.25-->
-                <p class="text-secondary"><a href="https://en.wikipedia.org/wiki/Stari_Most" target="_blank" style="color: #89cff0; text-decoration: none;">The Old Bridge in Mostar</a> over the Neretva River is a UNESCO World Heritage Site which, when it was built, was the largest arch structure in the world. </p>
+                <p class="text-secondary"><a href="https://en.wikipedia.org/wiki/Stari_Most" target="_blank" style="color: var(--blue-color); font-weight: bold;text-decoration: none;" >The Old Bridge in Mostar</a> over the Neretva River is a UNESCO World Heritage Site which, when it was built, was the largest arch structure in the world. </p>
                 <p></p>
                 <img src="slike/starimost.jpg" alt="" class="py-3">
             </div>
             <!--Izvor slike: https://furaj.ba/wp-content/uploads/2018/05/12_Prokosko_Lake.jpg-->
             <div class="drugi_blok">
-                <p class="text-secondary"><a href="https://hr.wikipedia.org/wiki/Proko%C5%A1ko_jezero" target="_blank" style="color: #89cff0; text-decoration: none;">Lake Prokoško</a> is located on the mountain Vranica, Bosnia and Herzegovina and is of glacial origin.</p>
+                <p class="text-secondary"><a href="https://hr.wikipedia.org/wiki/Proko%C5%A1ko_jezero" target="_blank" style="color: var(--blue-color); font-weight: bold;text-decoration: none;" >Lake Prokoško</a> is located on the mountain Vranica, Bosnia and Herzegovina and is of glacial origin.</p>
                 <p></p>
                 <img src="slike/prokosko-jezero.jpg" alt="">
             </div>
@@ -150,17 +147,17 @@
         <div class="containe2">
             <div class="treci_blok">
                 <!--Izvor slike: https://www.google.com/search?q=tekija+blagaj&sxsrf=ALiCzsa6yJgY1EHFC4jCTAZcGPP9OW--Nw:1668912230085&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjEqorF3rv7AhUIgP0HHWRWBooQ_AUoAXoECAIQAw&biw=1536&bih=754&dpr=1.25-->
-               <p class="text-secondary"><a href="https://bs.wikipedia.org/wiki/Tekija_u_Blagaju" target="_blank" style="color: #89cff0; text-decoration: none;" >Tekija in Blagaj </a>is located at the source of the Buna river, not far from the center of Blagaj near Mostar.</p>
+               <p class="text-secondary"><a href="https://bs.wikipedia.org/wiki/Tekija_u_Blagaju" target="_blank" style="color: var(--blue-color); font-weight: bold;text-decoration: none;"  >Tekija in Blagaj </a>is located at the source of the Buna river, not far from the center of Blagaj near Mostar.</p>
                 <img src="slike/vrelo bune.jpg" alt="" class="pt-3">
             </div>
             <div class="cetvrti_blok">
                 <!--Izvor slike: https://www.google.com/search?q=tvr%C4%91ava+ostro%C5%BEac&hl=bs&sxsrf=ALiCzsYrnH2d7b2eFk9MKJxac_M95ndpug:1668909125294&source=lnms&tbm=isch&sa=X&ved=2ahUKEwic-cz80rv7AhXc_7sIHWoxAkMQ_AUoAXoECAEQAw&biw=1536&bih=696&dpr=1.25#imgrc=_ANUaHCN-fAgFM-->
-                <p class="text-secondary"><a href="https://bs.wikipedia.org/wiki/Ostro%C5%BEac_(tvr%C4%91ava)" target="_blank" style="color: #89cff0; text-decoration: none;">Tvrđava Ostrožac</a>The fortress dates back to the 16th century, when the Ottomans founded the Ottoman province of Bosnia.</p>
+                <p class="text-secondary"><a href="https://bs.wikipedia.org/wiki/Ostro%C5%BEac_(tvr%C4%91ava)" target="_blank" style="color: var(--blue-color); font-weight: bold; text-decoration: none;">Tvrđava Ostrožac</a>The fortress dates back to the 16th century, when the Ottomans founded the Ottoman province of Bosnia.</p>
                 <img src="slike/tvrđavaostrozac.jpg" alt="" class="pt-3">
             </div>
             <div class="peti_blok">
                 <!--Izvor slike: https://azra.ba/wp-content/uploads/2022/02/stecci-glavna.jpg-->
-                <p class="text-secondary"><a href="https://bs.wikipedia.org/wiki/Ste%C4%87ak" target="_blank" style="color: #89cff0; text-decoration: none;">Stećak</a> is a type of stone medieval tombstone.</p>
+                <p class="text-secondary"><a href="https://bs.wikipedia.org/wiki/Ste%C4%87ak" target="_blank" style="color: var(--blue-color); font-weight: bold;text-decoration: none;" >Stećak</a> is a type of stone medieval tombstone.</p>
                 <img src="slike/stecci-glavna.jpg" alt="">
             </div>
         </div>

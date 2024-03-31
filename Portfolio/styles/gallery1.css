@@ -17,11 +17,21 @@
     color: var(--gray-color);    
     font-size: 1rem;
 }
-#navbar-nav{
-    margin-left: 50px;
-}
 .navbar a i{
-    padding-right: 0.9rem;
+    padding-right: 0.5rem;
+}
+.custom-button {
+    padding: 10px;
+    background-color: var(--blue-color);
+    color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
 }
 footer {
     position: fixed;
@@ -80,9 +90,7 @@ footer {
 .container2 {
     font-weight: bolder;
 }
-span {
-    color: black;
-}
+
 .kravica_4_text {
     padding-top: 20px;
     background-color: white;

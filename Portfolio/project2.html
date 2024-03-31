@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Jasenko | Project</title>
+        <link rel="stylesheet" href="../Portfolio/styles/style.css">
+        <meta charset="utf-8">
+        <link rel="icon" type="image/x-icon" href="slike/header-img.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+<body>
+  <!--KOD ZA NAV BAR PREUZET SA: https://getbootstrap.com/docs/5.0/components/navbar/ i dorađen-->
+  <nav>
+    <div class="navbar navbar-expand-lg bg-light container-fluid px-3" id="nav">
+      <a class="navbar-brand" href="#"><img src="slike/header-img.png" alt="" width="65px" height="60px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html"><i class="fa fa-home" style="font-size:20px"></i>Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html"><i class="fa fa-user-circle" style="font-size:20px"></i>About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html"><i class="fa fa-solid fa-graduation-cap" style="font-size: 20px;"></i>Education</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="gallery1.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-image" style="font-size:20px"></i>
+              Gallery
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="gallery1.html">Gallery 1</a></li>
+              <li><a class="dropdown-item" href="gallery2.html">Gallery 2</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa fa-tasks" aria-hidden="true"></i>
+              Projects
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="m-project.html">School projects</a></li>
+              <li><a class="dropdown-item" href="project1.html" >Project 1</a></li>
+              <li><a class="dropdown-item" href="project2.html" >Project 2</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="blog.html"><i class="fa fa-edit" style="font-size:20px"></i>Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="index.html"><i class="fa fa-phone" style="font-size: 20px;"></i>Contact</a>
+          </li>
+        </ul>
+      </div>
+      <button class="custom-button">Download CV</button>
+    </div>
+  </nav>
+  <div id="project1" class="bg-light m-5 p-5">
+    <h1 class="text-secondary text-center">Project 2</h1>
+    <p class="text-center pb-5" style="color:var(--blue-color); font-weight: bold;">The second project is a quiz application, made with the help of javascript</p>
+    <div class="row">
+        <div class="col-sm-8">
+            <h6 class="text-secondary">Step 1: Set up the structure</h6>
+            <p class="text-secondary">First, we'll create divs to hold our quiz and our results.
+                Then we'll put in a submit button.</p>
+                <img src="slike/Screenshot_8.png" alt="" width="350px" height="100px">
+                <p class="text-secondary">Next, we'll create a function to generate a quiz.
+                    Your function will need these inputs:</p>
+                    <ul class="text-secondary">
+                        <li>The quiz questions</li>
+                        <li>A place to put the quiz</li>
+                        <li>A place for the results</li>
+                        <li>A submit button</li>
+                    </ul>
+                <p class="text-secondary">And if you put those things in, the function should spit out a fully-formed quiz.</p>
+                <h6 class="text-secondary">The JavaScript structure:</h6>
+                <img src="slike/Screenshot_9.png" alt="" width="350px" height="250px">
+                <p class="text-secondary">If you look closely at the JavaScript structure, you'll see that our generateQuiz function contains helper functions to show the quiz, accept submissions, and show the results.</p>
+                <h6 class="py-3"><a href="https://simplestepscode.com/javascript-quiz-tutorial/" target="_blank" class="text-decoration-none text-secondary">More information ></a></h6>
+        </div>
+        <div class="col-sm-4"><img src="slike/Screenshot_5.png" alt="" width="320px" height="300px" class="rounded-circle mx-auto d-block my-5"></div>
+          <div class="row">
+            <div class="col-sm-3">
+                <cite style="color:var(--blue-color); font-weight: bold;" class="py-5">
+                    <h5>To make a simple JavaScript quiz, there are four steps:</h5>
+                    <ol>
+                        <li>Set up the structure.</li>
+                        <li>Show the questions.</li>
+                        <li>Show the questions.</li>
+                        <li>Put it all together.</li>
+                    </ol>
+                </cite>
+            </div>
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6"><img src="slike/Screenshot_7.png" alt="" width="350px" height="320px" class="rounded-circle"></div>
+          </div>
+      </div>
+    </div>
+</div>
+
+      <div id="razmak">
+      </div>
+      <div class="container">
+        <footer class="py-3 bg-light container-fluid">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <a href="https://www.facebook.com/Jasenko10/" target="_blank" class="fa fa-facebook nav-link px-2 text-muted"></a>
+            <a href="https://www.instagram.com/jaasenko/" target="_blank" class="fa fa-instagram nav-link px-2 text-muted"></a>
+            <a href="https://twitter.com/jaasenko" target="_blank" class="fa fa-twitter nav-link px-2 text-muted"></a>
+            <a href="https://github.com/" target="_blank" class="fa fa-github nav-link px-2 text-muted"></a>
+            <a href="https://www.linkedin.com/in/jasenko-zlatarevic-34105a245/" target="_blank" class="fa fa-linkedin nav-link px-2 text-muted"></a>
+            <a id="gore" href="#nav" style="font-weight: bolder;" class="px-2 text-muted"><span>Back to top</span>&nbsp;⬆</a>
+          </ul>
+          <p class="text-center text-muted">© 2024 Copyright</p>
+        </footer>
+      </div>
+</body>
+</html>

@@ -14,15 +14,27 @@
 :root {
     --open-sans: 'Open Sans', sans-serif; /* Open Sans font */
   }
+
 .navbar a{
     color: var(--gray-color);    
     font-size: 1rem;
 }
-#navbar-nav{
-    margin-left: 50px;
-}
+
 .navbar a i{
-    padding-right: 0.9rem;
+    padding-right: 0.5rem;
+}
+.custom-button {
+    padding: 10px;
+    background-color: var(--blue-color);
+    color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
 }
 footer {
     position: fixed;
@@ -48,21 +60,17 @@ footer {
     padding-top: 200px;
     padding-left: 50px;
     font-weight: 600;
-
+    text-shadow: 5px 5px 6px rgba(0, 0, 0, 0.5);
 }
 .homepage .leftside p{
     padding-left: 100px;
     color: var(--secondary-color);
 
 }
-.homepage .rightside img{
-    filter: brightness(70%);
-    margin-top: 70px;
-    border: 7px solid var(--blue-color);
-    border-radius: 50%;
-}
-.rightside{
-    margin-left: 100px;
+
+#home .rightside img{
+    margin-top: -250px;
+    filter: drop-shadow(50px 20px 8px rgba(0, 0, 0, 0.1));
 }
 @media only screen and (max-width: 768px) {
     .homepage{
@@ -80,9 +88,8 @@ footer {
         margin-left: -50px;
     }
     .homepage .rightside img{
-        width: 300px;
-        height: 300px;
-        margin-left: 60px;
+        margin-left: -100px;
+
     }
     .rightside{
         margin-left: -10px;
@@ -107,4 +114,103 @@ footer {
         display: none;
     }
 }
+@media screen and (max-width: 1200px) { 
+    #project1 img{
+        width: 200px;
+        height: 150px;
+    }
+}
+@media screen and (max-width: 1200px) { 
+    #m-project img{
+        width: 200px;
+        height: 150px;
+    }
+}
+
+/*BLOG CSS*/
+#gore{
+    text-decoration: none;
+    padding-top: 0.1875rem;
+}
+#razmak{
+    margin-bottom: 200px;
+}
+.container1 {
+    position: relative;
+    width: 100%;
+  }
   
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--blue-color);
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+  }
+  
+  .container1:hover .overlay {
+    bottom: 0;
+    height: 100%;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  #btn {
+    width: 100px;
+    height: 40px;
+    color: white;
+    background-color: var(--blue-color);
+    border: 1px solid white;
+    border-radius: 10px;
+    font-size: 15px;
+}
+#btn:hover {
+    cursor: pointer;
+}
+
+.linkovi {
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--blue-color);
+}
+.linkovi ul {
+  background-color: var(--blue-color);
+  color: white;
+  list-style-type: none;
+}
+.linkovi li {
+  background-color: var(--blue-color);
+}
+.linkovi a {
+  text-decoration: none;
+  font-weight: 500;
+  color: white;
+  background-color: var(--blue-color);
+}
+.linkovi a:visited {
+  font-weight: bolder;
+  color: white;
+  background-color: var(--blue-color);
+}
