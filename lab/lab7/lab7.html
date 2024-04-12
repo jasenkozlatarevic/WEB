@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Lab</title>
+        <link rel="stylesheet" href="../lab7/lab7.css">
+    </head>
+    <body>
+      <input type="text" id="searchInput" placeholder="Search by employee name">
+      <table id="employeeTable">
+        <thead>
+          <tr>
+            
+            <th data-sort="name">Name <span class="sort-icon">&uarr;&darr;</span></th>
+            <th data-sort="lastName">Last Name <span class="sort-icon">&uarr;&darr;</span></th>
+            <th data-sort="position">Position <span class="sort-icon">&uarr;&darr;</span></th>
+            <th data-sort="office">Office <span class="sort-icon">&uarr;&darr;</span></th>
+            <th data-sort="office">Age <span class="sort-icon">&uarr;&darr;</span></th>
+            <th data-sort="startDate">Start Date <span class="sort-icon">&uarr;&darr;</span></th>
+            <th data-sort="salary">Salary <span class="sort-icon">&uarr;&darr;</span></th>
+          </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+    
+      <!-- Modal -->
+      <div id="modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div id="modalContent"></div>
+        </div>
+      </div>
+    
+  <script src="../lab7/lab7.js"></script>
+    </body>
+</html>
