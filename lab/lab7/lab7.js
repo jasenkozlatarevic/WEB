@@ -101,4 +101,4 @@ document.addEventListener("DOMContentLoaded", function () {
   
     populateTable();
   });
-  
+  onclick="document.getElementById('demo').style.fontSize='35px'"
