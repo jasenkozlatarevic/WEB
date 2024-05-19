@@ -49,18 +49,24 @@
                 <!-- Start Atribute Navigation -->
                 <div class="attr-nav">
                     <ul>
+                        <li>
+                            <div class="theme-switcher">
+                                <input type="checkbox" id="theme-toggle" class="toggle-checkbox">
+                                <label for="theme-toggle" class="toggle-label"></label>
+                            </div>
+                        </li>
                         <li class="side-menu"><a href="#"><i class="fa fa-bars"></i></a></li>
                     </ul>
-                </div>        
-                <!-- End Atribute Navigation -->
 
+
+                </div>   
+                <!-- End Atribute Navigation -->
                 <!-- Start Header Navigation -->
                 <div class="navbar-header">
                     <a class="navbar-brand" href="#"><img src="images/logo.png" class="logo" alt=""></a>
                 </div>
                 <!-- End Header Navigation -->
             </div>   
-
             <!-- Start Side Menu -->
             <div class="side">
                 <a href="#" class="close-side"><i class="fa fa-times"></i></a>
@@ -101,7 +107,29 @@
                     </div>
                 </div>
             </div><!-- Container end -->
-        </header><!-- Header end -->
+        </header>
+
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-header">Do you have vegetarian or vegan options?</div>
+                <div class="accordion-content">Yes, we offer a variety of vegetarian and vegan burgers, salads, and sides.</div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">Can I customize my burger?</div>
+                <div class="accordion-content">Absolutely! You can customize any burger with your choice of toppings, sauces, and sides.</div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">Are there gluten-free options available?</div>
+                <div class="accordion-content">Yes, we have gluten-free buns and several gluten-free menu items available.</div>
+            </div>
+            <div class="accordion-item">
+                <div class="accordion-header">Do you take reservations?</div>
+                <div class="accordion-content">We accept reservations for parties of six or more. For smaller groups, we operate on a first-come, first-served basis.</div>
+            </div>
+        </div>
+        
+
+        <!-- Header end -->
         <!-- Block Content -->
         <section id="block">
             <div class="container">
@@ -116,8 +144,25 @@
 
                                 <h2>Shack Burger </h2>
                                 <p>Black Angus beef patty topped with American cheese, tomato, lettuce, and “Shack Sauce,” served in a grilled potato bun</p>
+                                <button id="openPopupBtn" class="popupBtn">Read more...</button>
+
+                                <div id="popupContainer" class="popup-container">
+                                    <h2>Shack burger</h2>
+                                    <p>Shack Burger is a cult burger often distinguished by its delicious combination of ingredients and<br>
+                                        distinctive Shack Sauce. This burger is made from juicy Black Angus beef patty topped with <br>American
+                                        cheese, fresh tomato, crispy lettuce, and the unique Shack Sauce, served in a grilled<br> potato bun.
+                                        This burger is popular among burger enthusiasts due to its rich texture and flavor <br>combination.
+                                        Black Angus beef patties are known for their quality and juiciness, while American cheese adds a creamy touch.<br>
+                                        The addition of fresh tomato and crispy lettuce provides freshness and an extra layer of crunch.<br>
+                                        The special secret of Shack Burger lies in the Shack Sauce, which adds a unique aroma and<br> flavor to the burger.
+                                        This sauce may contain a combination of spices, mustard, mayonnaise, and<br> other ingredients that give the
+                                        burger its distinctive taste.With all these delicious elements, <br>Shack Burger is the perfect choice for 
+                                        burger lovers looking to enjoy an authentic, rich, and flavorful burger experience.</p>
+                                    <button id="closePopupBtn">Back</button>
+                                </div>
+                            
+                                <div id="overlay" class="overlay"></div>
                             </div>
-                            <p class="caption">*Limited Time Only</p>
                         </div>
                     </div>
                     <div class="col-sm-4">
@@ -168,7 +213,7 @@
                                     <li><a href=""><span class="flaticon flaticon-calories"></span><p>Calories - 750 kcal</p></a></li>
                                 </ul>
                                 <div class="info_btn_shadow">
-                                    <a href="" class="info_btn">info & nutrition</a>
+                                    <button class="info_btn">info & nutrition</button>
                                 </div>
                             </div>
 
@@ -210,7 +255,7 @@
                                 <p>Chef Wesley Genovart makes this over-the-top, Shake Shack–inspired burger with two thin stacked patties, thick-cut bacon, kimchi and a spicy homemade sauce.</p>
 
                                 <div class="info_btn_shadow">
-                                    <a href="" class="info_btn">info & nutrition</a>
+                                    <p class="info_btn">info & nutrition</p>
                                 </div>
                             </div>
                         </div>
@@ -224,7 +269,8 @@
                                 <p>Chef Wesley Genovart makes this over-the-top, Shake Shack–inspired burger with two thin stacked patties, thick-cut bacon, kimchi and a spicy homemade sauce.</p>
 
                                 <div class="info_btn_shadow">
-                                    <a href="" class="info_btn">info & nutrition</a>
+                                    <p class="info_btn">info & nutrition</p>
+
                                 </div>
                             </div>
                         </div>
@@ -232,13 +278,13 @@
                             <img src="images/large_slider_img.jpg" alt="Burger">
 
                             <div class="carousel-caption">
-                                <h2>Cheddar JUnky</h2>
+                                <h2>Cheddar Junky</h2>
                                 <h3>Stuffed Burgers</h3>
 
                                 <p>Chef Wesley Genovart makes this over-the-top, Shake Shack–inspired burger with two thin stacked patties, thick-cut bacon, kimchi and a spicy homemade sauce.</p>
 
                                 <div class="info_btn_shadow">
-                                    <a href="" class="info_btn">info & nutrition</a>
+                                    <p class="info_btn">info & nutrition</p>
                                 </div>
                             </div>
                         </div>
@@ -282,8 +328,9 @@
         </section>
 
         <!-- Map -->
-        <div id="ourmaps"></div>
-
+        <div id="ourmaps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2734.531520775046!2d18.427601676013694!3d43.85837807109315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4758c8c85d8228cb%3A0xa2a0fed102e3abd2!2sBazard%C5%BEani%2016%2C%20Sarajevo%2071000!5e1!3m2!1sen!2sba!4v1715604215346!5m2!1sen!2sba" width="1518" height="360" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
         <!-- Footer -->
         <footer>
             <!-- Container -->
@@ -359,38 +406,9 @@
         <script src="js/bootsnav.js"></script>
 
         <!-- JS Implementing Plugins -->
-        <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
-        <script src="js/gmaps.min.js"></script>
 
         <script type="text/javascript">
-            var map;
-            $(document).ready(function () {
-                map = new GMaps({
-                    el: '#ourmaps',
-                    lat: 3.139003,
-                    lng: 101.686855,
-                    scrollwheel: false
-                });
 
-                //locations request
-                map.getElevations({
-                    locations: [[3.139003, 101.686855]],
-                    callback: function (result, status) {
-                        if (status == google.maps.ElevationStatus.OK) {
-                            for (var i in result) {
-                                map.addMarker({
-                                    lat: result[i].location.lat(),
-                                    lng: result[i].location.lng(),
-                                    infoWindow: {
-                                        content: '<address class="tooltip_address"><b>Junky Burger</b><br />Jalan Awan Hijau, Taman OUG<br />58200 Kuala Lumpur <br />Malaysia <br /></address>'
-                                    }
-                                });
-                            }
-                        }
-                    }
-                });
-
-            });
         </script>
 
 

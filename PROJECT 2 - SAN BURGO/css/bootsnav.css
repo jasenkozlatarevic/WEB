@@ -370,7 +370,7 @@ body.on-side{
     padding: 25px 30px;
     height: 100%;
     display: block;
-    background-color: #333;
+    background-color: #3d3131;
     -webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
@@ -400,12 +400,15 @@ body.on-side{
 .side .widget .title{
     color: #fff;
     margin-bottom: 15px;
+    font-size: 25px;
 }
 
 .side .widget ul.link{
     padding: 0;
     margin: 0;
     list-style: none;
+    line-height: 50px;
+    font-size: 20px;
 }
 
 .side .widget ul.link li a{
