@@ -62,23 +62,41 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-document.addEventListener("DOMContentLoaded", function() {
-    const accordionHeaders = document.querySelectorAll(".accordion-header");
+var accordionItems = document.querySelectorAll('.accordion-item');
 
-    accordionHeaders.forEach(header => {
-        header.addEventListener("click", function() {
-            const parent = this.parentNode;
-            const isActive = parent.classList.contains("active");
-
-            // Close all accordion items
-            accordionHeaders.forEach(item => {
-                item.parentNode.classList.remove("active");
-            });
-
-            // Toggle active class for clicked item
-            if (!isActive) {
-                parent.classList.add("active");
-            }
-        });
+accordionItems.forEach(function(item) {
+    item.querySelector('.accordion-header').addEventListener('click', function() {
+        var content = this.nextElementSibling;
+        if (content.style.display === 'block') {
+            content.style.display = 'none';
+        } else {
+            content.style.display = 'block';
+        }
     });
 });
+    function openModal(imgSrc) {
+        var modalHtml = `
+            <div class="modal" id="imageModal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img class="img-fluid" src="${imgSrc}" alt="Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        `;
+        document.body.insertAdjacentHTML('beforeend', modalHtml);
+        $('#imageModal').modal('show');
+    }
+    var thumbnails = document.querySelectorAll('.thumbnail');
+    thumbnails.forEach(function(thumbnail) {
+        thumbnail.addEventListener('click', function() {
+            openModal(this.src);
+        });
+    });
