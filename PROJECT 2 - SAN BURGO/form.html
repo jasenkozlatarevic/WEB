@@ -6,8 +6,6 @@
     <title>San Burgo</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
-    <link rel="icon" type="image/x-icon" href="../images/favicon-32x32.png">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
     <style>
         body {
             display: flex;
@@ -97,17 +95,7 @@
                     }
                 },
                 submitHandler: function(form) {
-                    $.ajax({
-                        type: "POST",
-                        url: "save_form.php",
-                        data: $(form).serialize(),
-                        success: function(response) {
-                            toastr.success('Data saved successfully');
-                        },
-                        error: function() {
-                            toastr.error('An error occurred while saving data');
-                        }
-                    });
+                    toastr.success('Form submitted successfully!');
                 }
             });
 
@@ -124,7 +112,7 @@
                 $("#name").val(entity.name);
                 $("#email").val(entity.email);
                 $("#password").val(entity.password);
-                $("#date").datepicker("setDate", entity.date);
+                $("#date").val(entity.date);
                 toastr.success('Entity data loaded for editing');
             });
 
