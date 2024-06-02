@@ -3,22 +3,19 @@
     <head>
         <meta charset="utf-8">
         <title>San Burgo</title>
-        <!-- Mobile Specific Meta -->
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <!-- Stylesheets -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
         <link rel="stylesheet" href="css/flaticon.css" />
-        <!-- Animate -->
         <link rel="stylesheet" href="css/animate.css">
-        <!-- Bootsnav -->
         <link rel="stylesheet" href="css/bootsnav.css">
-        <!-- Color style -->
         <link rel="stylesheet" href="css/color.css">
-
-        <!-- Custom stylesheet -->
         <link rel="stylesheet" href="css/custom.css" />
-        <link rel="icon" type="image/x-icon" href="../PROJECT 2 - SAN BURGO/images/favicon-32x32.png">
+        <link rel="icon" type="image/x-icon" href="../images/favicon-32x32.png">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/jquery.validation/1.19.3/jquery.validate.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
     </head>
     <body data-spy="scroll" data-target="#navbar-menu" data-offset="100">
 
@@ -44,6 +41,7 @@
             <div class="container">  
 
                 <!-- Start Atribute Navigation -->
+                <!--THEME SWITCHER-->
                 <div class="attr-nav">
                     <ul>
                         <li>
@@ -54,8 +52,6 @@
                         </li>
                         <li class="side-menu"><a href="#"><i class="fa fa-bars"></i></a></li>
                     </ul>
-
-
                 </div>   
                 <!-- End Atribute Navigation -->
                 <!-- Start Header Navigation -->
@@ -90,7 +86,6 @@
                         <div class="banner">
                             <h3>-fast food-</h3>
                             <h1>San Burgo</h1>
-
                             <div class="inner_banner">
                                 <div class="banner_content">
                                     <p>"At San Burgo, every bite is a magical blend of flavor and freshness. Our burgers are dream creations, and every meal is a journey to perfect indulgence."</p>
@@ -268,13 +263,13 @@
                     </div><!-- carousel inner end -->
                 </div><!-- Carousel end-->
 
-                <!-- Forth section -->
-                <div class="row forth_sec">
+                 <!-- Forth section -->
+                 <div class="row forth_sec">
                     <div class="col-sm-4">
                         <div class="menu">
                             <div class="inner_content">
                                 <span class="flaticon flaticon-burger"></span>
-                                <h2>menu</h2>
+                                <a href="view-more.html" style="color: white;"><h2>menu</h2></a>
                             </div>
                         </div>
                     </div>
@@ -317,30 +312,33 @@
                 <div class="accordion-content">We accept reservations for parties of six or more. For smaller groups, we operate on a first-come, first-served basis.</div>
             </div>
         </div>
-
+       <!--DATA-DRIVEN CONTENT-->
+       <hr>
+       <section id="dynamic-content">
+        <h2>Our Top Products</h2>
+        <div id="product-list"></div>
+    </section>
+        <!--INTERACTIVE GALLERY-->
         <div class="container text-center">
             <div class="row">
                 <div class="col-sm-4">
-                    <img class="thumbnail" src="../PROJECT 2 - SAN BURGO/images/640x640.webp" alt="">
+                    <img class="thumbnail" src="../images/gallery2-2.webp" alt="" height="280px">
                 </div>
                 <div class="col-sm-4">
-                    <img class="thumbnail" src="../PROJECT 2 - SAN BURGO/images/640x640.webp" alt="">
+                    <img class="thumbnail" src="../images/gallery1-1.webp" alt="" height="280px">
                 </div>
                 <div class="col-sm-4">
-                    <img class="thumbnail" src="../PROJECT 2 - SAN BURGO/images/640x640.webp" alt="">
+                    <img class="thumbnail" src="../images/gallery3-3.webp" alt="" height="280px">
                 </div>
             </div>
         </div>
+
 
         <!-- Lock -->
         <section id="lock">
             <h2>SERVING MORE THAN JUST BURGERS SINCE 1998</h2>
             <p>Check out our opening hours and location address below.</p>
         </section>
-
-
-
-
         <!-- Map -->
         <div id="ourmaps">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11291.50170684344!2d15.906279942607961!3d44.966524614093764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x476149721256a587%3A0xfa2ed8d259baec7d!2sMr.%20Burger!5e0!3m2!1sen!2sba!4v1716371897544!5m2!1sen!2sba" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -350,14 +348,11 @@
             <!-- Container -->
             <div class="container">
                 <div class="row">
-
                     <div class="col-lg-3 col-sm-4 col-xs-12 col-lg-offset-1 pull-right">
                         <div class="subscribe">
                             <h4>Subscribe now</h4>
-                            <p>Subscribe to the newsletter and
-                                get some crispy stuff every week.</p>
-
-                            <form role="form">
+                            <p>Subscribe to the newsletter and get some crispy stuff every week.</p>
+                            <form role="form" id="subscribeForm">
                                 <div class="form-group">
                                     <div class="input-group">
                                         <input type="email" class="form-control" id="em" placeholder="Enter your e-mail here">
@@ -369,13 +364,24 @@
                                     </div>
                                 </div>
                             </form>
-
                         </div>
                     </div>
-
+                    <script>
+                        //NOTIFICATION TOASTR
+                        document.getElementById('subscribeForm').addEventListener('submit', function(event) {
+                            event.preventDefault();
+                            var email = document.getElementById('em').value;
+                            if (email === "") {
+                                toastr.error('Please enter a valid email address.', 'Error');
+                            } else {
+                                toastr.success('Subscription successful!', 'Success');
+                                document.getElementById('subscribeForm').reset();
+                            }
+                        });
+                    </script>
                     <div class="col-lg-3 col-sm-4 col-xs-12 col-lg-offset-1 pull-right">
                         <div class="contact_us">
-                            <h4>Contact Us</h4>
+                            <a href="form.html" style="text-decoration: none;"><h4>Contact Us</h4></a>
                             <a href="">info@sanburgo.com</a>
 
                             <address>

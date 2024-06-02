@@ -2,15 +2,10 @@
 jQuery(document).ready(function ($) {
 
 //for Preloader
-
     $(window).load(function () {
         $("#loading").fadeOut(500);
     });
-
-
-
 // scroll Up
-
     $(window).scroll(function () {
         if ($(this).scrollTop() > 600) {
             $('.scrollup').fadeIn('slow');
@@ -61,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
         overlay.classList.remove('show');
     });
 });
-
+//ACCORDION MENU
 var accordionItems = document.querySelectorAll('.accordion-item');
 
 accordionItems.forEach(function(item) {
@@ -100,3 +95,24 @@ accordionItems.forEach(function(item) {
             openModal(this.src);
         });
     });
+//ADVANCED FORM VALIDATION
+//Data-driven content
+document.addEventListener('DOMContentLoaded', function() {
+    fetch('products.json')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            const productList = document.getElementById('product-list');
+            data.products.forEach(product => {
+                const productDiv = document.createElement('div');
+                productDiv.className = 'product';
+                productDiv.innerHTML = `<h3>${product.name}</h3><p>${product.description}</p><p>Price: $${product.price}</p>`;
+                productList.appendChild(productDiv);
+            });
+        })
+        .catch(error => console.error('Error fetching products:', error));
+});

@@ -1,0 +1,19 @@
+{
+    "products": [
+        {
+            "name": "Crispy Comté Frico Cheeseburgers",
+            "description": "Salty, buttery, and slightly sharp, Comté cheese crisps similarly to Parmesan, adding an irresistibly crunchy frico layer to these cheeseburgers.",
+            "price": 12.99
+        },
+        {
+            "name": "Ultimate Veggie Burgers",
+            "description": "These veggie burgers from our San Burgo hit every satisfying, savory note with a hearty mix of pearl barley, chickpeas, mushrooms, and crispy panko.",
+            "price": 10.99
+        },
+        {
+            "name": "Nacho Burgers",
+            "description": "These next-level burgers are topped with gooey cheese, salsa, and tortilla chips. Pair them with a bold, berry-rich Zinfandel.",
+            "price": 11.99
+        }
+    ]
+}
