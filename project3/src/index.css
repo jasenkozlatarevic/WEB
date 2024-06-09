@@ -1,0 +1,22 @@
+/* index.css */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
+.app-content {
+  padding-top: 64px; /* Height of AppBar */
+}
+
+@media (max-width: 600px) {
+  .app-content {
+    padding-top: 56px; /* Height of AppBar on mobile */
+  }
+}
